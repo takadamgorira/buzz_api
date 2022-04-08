@@ -1,0 +1,26 @@
+
+
+{% extends "layout.html" %}
+{% block content %}
+<head>
+    <link rel="stylesheet" href="../static/css/input.css" media="screen">
+</head>
+
+<div class="input">
+    
+    <div class="title">バズる確率を自動算出</div>
+    <div class="button">
+        <form action = "/input" method="post" enctype="multipart/form-data">
+            
+            <!-- <input type="text" id = "user_tweet" name = "user_tweet" placeholder="ここにテキストを入力してください" class="form-control"> -->
+            <div class="text-container">
+                <textarea rows="10" cols="70" id="user_tweet" name="user_tweets" placeholder="ここにテキストを入力してください"></textarea>
+            </div>
+            <div class="sub_button">
+                <input type="submit" value="送信" class="btn btn-primary"></input>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
